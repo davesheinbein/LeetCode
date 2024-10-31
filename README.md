@@ -1,7 +1,5 @@
 # LeetCode Solutions
 
-<iframe src="https://giphy.com/embed/QDjpIL6oNCVZ4qzGs7" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pudgypenguins-work-computer-working-QDjpIL6oNCVZ4qzGs7">via GIPHY</a></p>
-
 Welcome to my collection of solutions for LeetCode problems! This repository aims to provide clear and efficient implementations of various coding challenges found on LeetCode.
 
 ## Table of Contents
@@ -9,8 +7,6 @@ Welcome to my collection of solutions for LeetCode problems! This repository aim
 - [Introduction](#introduction)
 - [Problem Categories](#problem-categories)
 - [Technologies Used](#technologies-used)
-- [Contribution](#contribution)
-- [License](#license)
 
 ## Introduction
 
@@ -44,3 +40,5 @@ Each category contains subdirectories with specific problems, their respective s
 
 - [LeetCode](https://leetcode.com/problemset/) for providing a platform for coding practice and learning.
 - The developer community for inspiration and collaborative learning.
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjVxMzJlMG1rOWI5OWx0cjBkczRxY2JydGV0dnVlZ29qZTR5cnh6MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QDjpIL6oNCVZ4qzGs7/giphy.webp" />
