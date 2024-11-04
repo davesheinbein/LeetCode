@@ -10,10 +10,7 @@ function wordPattern(pattern, s) {
     // If the number of elements in the pattern does not match the number of words, return false.
     // This is a quick check to ensure that the one-to-one mapping can exist.
     if (pattern.length !== words.length) {
-        console.log("Length mismatch:");
-        console.log(`pattern length = ${pattern.length}`);
-        console.log(`words length = ${words.length}`);
-
+        console.log(`Length mismatch: pattern length = ${pattern.length}, words length = ${words.length}`);
         return false; // If lengths are different, the pattern cannot match the words.
     }
 
@@ -25,62 +22,37 @@ function wordPattern(pattern, s) {
     console.log(`Initialized charToWordMap and wordToCharMap.`);
 
     // Iterate over the pattern.
-    // This loop goes through each character in the pattern and its corresponding 
-    // word in the words array.
+    // This loop goes through each character in the pattern and its corresponding word in the words array.
     for (let i = 0; i < pattern.length; ++i) {
         const char = pattern[i]; // Current character from the pattern.
         const word = words[i]; // Current word from the string.
         
-        console.log(`Processing index ${i}`);
-        console.log(`char = '${char}'`);
-        console.log(`word = '${word}'`);
-
+        console.log(`Processing index ${i}: char = '${char}', word = '${word}'`);
 
         // Check if the current character is already associated with a different word.
-        // If the character is already in the charToWordMap and it maps to a word 
-        // different from the current one, it indicates a conflict in mapping and thus 
-        // the pattern cannot match.
+        // If the character is already in the charToWordMap and it maps to a word different from the current one,
+        // it indicates a conflict in mapping and thus the pattern cannot match.
         if (charToWordMap.has(char)) {
-            console.log("Character:");
-            console.log(`'${char}'`);
-            console.log("is already mapped to:");
-            console.log(`'${charToWordMap.get(char)}'`);
-            
+            console.log(`Character '${char}' is already mapped to '${charToWordMap.get(char)}'`);
             if (charToWordMap.get(char) !== word) {
-                console.log("Conflict found:");
-                console.log(`char '${char}'`);
-                console.log(`mapped to '${charToWordMap.get(char)}'`);
-                console.log(`expected '${word}'`);
-
+                console.log(`Conflict found: char '${char}' mapped to '${charToWordMap.get(char)}', expected '${word}'`);
                 return false; // Mismatch found, return false.
             }
         } else {
-            console.log("Mapping character:");
-            console.log(`'${char}'`);
-            console.log(`to word '${word}'`);
+            console.log(`Mapping character '${char}' to word '${word}'`);
         }
 
         // Check if the current word is already associated with a different character.
-        // Similar to the previous check, if the word is already mapped to a 
-        // character different from the current one, this also indicates a conflict.
+        // Similar to the previous check, if the word is already mapped to a character different from the current one,
+        // this also indicates a conflict.
         if (wordToCharMap.has(word)) {
-            console.log("Word:");
-            console.log(`'${word}'`);
-            console.log("is already mapped to:");
-            console.log(`'${wordToCharMap.get(word)}'`);
-
+            console.log(`Word '${word}' is already mapped to '${wordToCharMap.get(word)}'`);
             if (wordToCharMap.get(word) !== char) {
-                console.log("Conflict found:");
-                console.log(`word '${word}'`);
-                console.log(`mapped to '${wordToCharMap.get(word)}'`);
-                console.log(`expected '${char}'`);
-
+                console.log(`Conflict found: word '${word}' mapped to '${wordToCharMap.get(word)}', expected '${char}'`);
                 return false; // Mismatch found, return false.
             }
         } else {
-            console.log("Mapping character:");
-            console.log(`'${char}'`);
-            console.log(`to word '${word}'`);
+            console.log(`Mapping word '${word}' to character '${char}'`);
         }
 
         // Add the current character-to-word and word-to-character association to the maps.
