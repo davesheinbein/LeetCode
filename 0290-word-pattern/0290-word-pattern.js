@@ -1,5 +1,3 @@
-// Checks if a string pattern matches a given string sequence.
-// Each letter in the pattern corresponds to a word in the s string.
 function wordPattern(pattern, s) {
     console.log("pattern", pattern);
     console.log("Words", s);
