@@ -1,3 +1,32 @@
+/**
+ * Problem Explanation:
+ * 
+ * Given an integer array nums sorted in non-decreasing order, remove the duplicates 
+ * in-place so that each unique element appears only once, and return the count of 
+ * unique elements. 
+ * 
+ * Definitions:
+ * - Non-decreasing order: This means that each element in the array is equal to or 
+ *   greater than the previous one. For example, [1, 1, 2, 3, 4, 4] is sorted in 
+ *   non-decreasing order.
+ * 
+ * Requirements:
+ * 1. Modify nums so that the first k elements (where k is the number of unique 
+ *    elements) contain only unique elements, maintaining their original order.
+ * 2. Any elements in nums beyond the first k positions are not important.
+ * 
+ * Return Value:
+ * - The function returns `k`, which represents the count of unique elements in the 
+ *   modified array. This `k` allows any code calling this function to know where the 
+ *   unique elements end in the modified array.
+ * 
+ * Custom Judge:
+ * The solution is tested with a custom judge that:
+ * - Compares the returned `k` to the expected count of unique elements.
+ * - Confirms that the first k elements in nums match the expected unique elements.
+ * If both conditions are satisfied, the solution is accepted.
+ */
+
 var removeDuplicates = function(nums) {
     // Log the initial state of the input array
     console.log(`Initial nums: ${nums}`);
@@ -11,7 +40,8 @@ var removeDuplicates = function(nums) {
         return 0;
     }
 
-    // Initialize a pointer k to keep track of the position of the last unique element
+    // Initialize a pointer `k` to track the position of the last unique element
+    // Since the first element is always unique, we start with k = 1
     let k = 1; 
 
     // Start iterating through the array from the second element (index 1)
@@ -53,7 +83,7 @@ var removeDuplicates = function(nums) {
  * 2. Initial Checks: It first logs the input array and its length. If the array is 
  * empty, it returns 0, indicating there are no unique elements.
  *
- * 3. Pointer Initialization: The variable k is initialized to 1 because the first 
+ * 3. Pointer Initialization: The variable `k` is initialized to 1 because the first 
  * element is always considered unique.
  *
  * 4. Iterative Comparison: A for loop starts at index 1 and iterates through the 
@@ -67,20 +97,13 @@ var removeDuplicates = function(nums) {
  * 5. Final Output: After processing all elements, it logs the count of unique 
  * elements and the modified array, which contains only the unique elements up to 
  * index k.
- *
- * 6. Example Usage: The code includes example usages with different input arrays to 
- * demonstrate the function's behavior and logs the output results.
  */
 
-// Tests
+// Example Tests
 let nums1 = [1, 1, 2];
-// Call the removeDuplicates function and store the count of unique elements
 let k1 = removeDuplicates(nums1);
-// Log the output count of unique elements and the unique elements themselves
 console.log(`Output: ${k1}, Unique Elements: ${nums1.slice(0, k1)}`);
 
 let nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-// Call the function again with a different array
 let k2 = removeDuplicates(nums2);
-// Log the output for this second example
 console.log(`Output: ${k2}, Unique Elements: ${nums2.slice(0, k2)}`);
