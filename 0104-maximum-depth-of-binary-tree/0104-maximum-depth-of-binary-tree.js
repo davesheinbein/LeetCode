@@ -11,6 +11,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
+
 var maxDepth = function(root) {
     // Base case: if the node is null, the depth is 0
     if (root === null) {
