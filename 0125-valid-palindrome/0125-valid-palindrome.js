@@ -38,7 +38,34 @@ console.log(isPalindrome("12345")); // Expected output: false
 
 
 /*
-Explanation of Code
+Explanation
 
+1. Initial String Logging:
 
+The input string s is logged using console.log("string", s);.
+This helps in debugging by showing the original string before any processing.
+
+2. Cleaning the String:
+
+The function removes all non-alphanumeric characters from the string using the regular expression /[^a-z0-9]/gi with the replace method.
+
+[^a-z0-9]: Matches any character that is not a letter (a-z) or digit (0-9).
+
+g: Global flag ensures all matches are replaced.
+
+i: Case-insensitive flag ensures both uppercase and lowercase characters are matched.
+
+The resulting string is converted to lowercase using toLowerCase() to handle case insensitivity.
+The cleaned string is logged using console.log("cleaned", cleaned);.
+
+3. Palindrome Check:
+
+The cleaned string is compared with its reversed version.
+cleaned.split(''): Splits the string into an array of characters.
+
+.reverse(): Reverses the order of characters in the array.
+
+.join(''): Joins the reversed characters back into a string.
+
+The function returns true if the cleaned string matches its reverse; otherwise, it returns false.
 */
