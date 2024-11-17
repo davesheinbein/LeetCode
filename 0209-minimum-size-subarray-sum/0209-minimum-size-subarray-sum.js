@@ -35,19 +35,30 @@ var minSubArrayLen = function(target, nums) {
 };
 
 /**
-  Explanation:
+   Explanation:
  
-  1. The `left` pointer marks the start of the current window, and the `right` pointer 
-     iterates through the array, expanding the window by adding elements to `sum`.
- 
-  2. Whenever the `sum` of the window is greater than or equal to the `target`, 
-     the program tries to shrink the window by moving the `left` pointer forward.
- 
-  3. While shrinking, the program calculates the current window length 
-     (`right - left + 1`) and updates `minLength` if the current length is smaller.
- 
-  4. If no valid subarray is found (i.e., `minLength` remains `Infinity`), the function returns 0.
- 
+  1. **Definition of a window**:
+     - A **window** refers to a contiguous segment of the array defined by two pointers: 
+       the `left` pointer (start of the window) and the `right` pointer (end of the window).
+     - The elements within the window are those between the `left` and `right` indices, inclusive.
+
+  2. **How the window works**:
+     - The `right` pointer expands the window by including new elements from the array into the sum.
+     - The `left` pointer shrinks the window by excluding elements from the sum when the condition (sum >= target) is met.
+     - This dynamic adjustment ensures the algorithm considers all possible valid subarrays efficiently.
+
+  3. **Algorithm steps**:
+     - Start with an empty window (`left = 0` and `right = 0`) and a `sum = 0`.
+     - Expand the window by moving the `right` pointer and adding elements to `sum`.
+     - If the `sum` of the window meets or exceeds the `target`, calculate the window's length (`right - left + 1`).
+     - Update `minLength` if the current window is shorter than the previously found windows.
+     - Shrink the window by moving the `left` pointer forward and subtracting the excluded element from `sum`.
+     - Continue until the entire array is processed.
+
+  4. **Final result**:
+     - If no valid subarray is found (i.e., `minLength` remains `Infinity`), return 0.
+     - Otherwise, return the smallest length found.
+
   Time Complexity: O(n) - Each element is visited at most twice (once by `right` and once by `left`).
   Space Complexity: O(1) - Only constant space is used.
  */
