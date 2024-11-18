@@ -25,19 +25,27 @@ var threeSum = function(nums) {
             continue;
         }
 
+        // Create two pointers: one at the element right after the current one (left)
+        // and one at the last element (right). These pointers will be used to find pairs
+        // that, together with nums[i], sum up to zero.
         let left = i + 1;
         let right = n - 1;
 
         // console.log(`Processing nums[${i}] = ${nums[i]}`);
 
         while (left < right) {
+            // Combination of current triplet
             const sum = nums[i] + nums[left] + nums[right];
             // console.log(`Checking combination: ${nums[i]}, ${nums[left]}, ${nums[right]} (sum = ${sum})`);
 
             if (sum === 0) {
                 // console.log(`Found triplet: [${nums[i]}, ${nums[left]}, ${nums[right]}]`);
+                
+                // Found a valid triplet: add it to the result array
                 result.push([nums[i], nums[left], nums[right]]);
+                // Move the left pointer to the right, skipping any duplicates
                 left++;
+                // Move the right pointer to the left, skipping any duplicates
                 right--;
 
                 // Skip duplicates for the second number
@@ -45,6 +53,7 @@ var threeSum = function(nums) {
                     // console.log(`Skipping duplicate for nums[${left}] = ${nums[left]}`);
                     left++;
                 }
+                
                 // Skip duplicates for the third number
                 while (left < right && nums[right] === nums[right + 1]) {
                     // console.log(`Skipping duplicate for nums[${right}] = ${nums[right]}`);
@@ -52,9 +61,15 @@ var threeSum = function(nums) {
                 }
             } else if (sum < 0) {
                 // console.log(`Sum < 0, incrementing left pointer from ${left} to ${left + 1}`);
+                
+                // If the sum is less than 0, we need a larger number to increase the sum
+                // So, move the left pointer to the right (left++)
                 left++;
             } else {
                 // console.log(`Sum > 0, decrementing right pointer from ${right} to ${right - 1}`);
+                
+                // If the sum is greater than 0, we need a smaller number to decrease the sum
+                // So, move the right pointer to the left (right--)
                 right--;
             }
         }
