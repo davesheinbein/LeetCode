@@ -60,6 +60,4 @@ Given the input `[-2, 1, -3, 4, -1, 2, 1, -5, 4]`:
 
 ### Space Complexity:
 - O(1) since we only use a constant amount of extra space (`maxSum` and `currentSum`).
-
-This is an optimal solution for the problem and will work efficiently even for large input sizes.
 */
