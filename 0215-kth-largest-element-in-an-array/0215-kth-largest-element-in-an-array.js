@@ -7,9 +7,9 @@
  */
  
 var findKthLargest = function(nums, k) {
-    // Initialize a Min-Heap to store the k largest elements.
-    // A Min-Heap is chosen because the root element will always be the smallest element in the heap.
-    // This allows us to easily remove the smallest element when the heap size exceeds k.
+    // Initialize a Min-Heap (MinPriorityQueue) to store the k largest elements. 
+    // MinPriorityQueue maintains elements in a priority order, with the smallest element always at the root. 
+    // This allows us to efficiently remove the smallest element when the heap size exceeds k.
     let minHeap = new MinPriorityQueue({ priority: x => x });
 
     // Iterate through each number in the input array `nums`
