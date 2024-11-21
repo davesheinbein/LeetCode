@@ -23,11 +23,6 @@ var letterCombinations = function(digits) {
         return result;
     }
     
-    /**
-     * Backtracking function to generate combinations
-     * @param {number} index - The current position in the input digits string
-     * @param {string} currentCombination - The combination being formed
-     */
     const backtrack = (index, currentCombination) => {
         // If the current combination length equals the number of digits, add it to the result
         if (index === digits.length) {
