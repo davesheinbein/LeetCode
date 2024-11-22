@@ -30,10 +30,10 @@ var climbStairs = function(n) {
 
 
 // Example
-// console.log("test:",climbStairs(2));  // Output: 2
-// console.log("test:",climbStairs(3));  // Output: 3
-// console.log("test:",climbStairs(4));  // Output: 5
-// console.log("test:",climbStairs(5));  // Output: 8
+console.log("test:",climbStairs(2));  // Output: 2
+console.log("test:",climbStairs(3));  // Output: 3
+console.log("test:",climbStairs(4));  // Output: 5
+console.log("test:",climbStairs(5));  // Output: 8
 console.log("test:",climbStairs(6));  // Output: 13
 
 
