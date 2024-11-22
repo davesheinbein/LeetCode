@@ -32,6 +32,12 @@ var findKthLargest = function(nums, k) {
     return minHeap.front().element;
 };
 
+// Example:
+
+const nums = [3, 2, 1, 5, 6, 4];
+const k = 2;
+console.log("test: ",findKthLargest(nums, k)); // Output: 5
+
 /*
 Explanation:
 
