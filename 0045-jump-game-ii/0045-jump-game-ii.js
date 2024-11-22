@@ -15,7 +15,7 @@ var jump = function(nums) {
     // Iterate through the array up to the second-to-last index (since reaching the last index ends the process).
     for (let i = 0; i < nums.length - 1; i++) {
         // Update the farthest reachable index. 
-        // returns the larger of the two numbers x and y
+        // Math.max returns the larger of the two numbers x and y
         farthest = Math.max(farthest, i + nums[i]); // greedy part of the algorithm
 
         // If we reach the end of the current range (currentEnd), increment the jump counter.
