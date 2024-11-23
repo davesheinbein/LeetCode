@@ -9,6 +9,7 @@ var RandomizedSet = function() {
  * @param {number} val - The value to insert.
  * @return {boolean} - Returns true if the value was inserted, false if it already exists.
  */
+
 RandomizedSet.prototype.insert = function(val) {
     // Check if the value already exists in the map
     if (this.map.has(val)) return false;
@@ -27,6 +28,7 @@ RandomizedSet.prototype.insert = function(val) {
  * @param {number} val - The value to remove.
  * @return {boolean} - Returns true if the value was removed, false if it doesn't exist.
  */
+
 RandomizedSet.prototype.remove = function(val) {
     // Check if the value exists in the map
     if (!this.map.has(val)) return false;
@@ -56,6 +58,7 @@ RandomizedSet.prototype.remove = function(val) {
  * Returns a random value from the set.
  * @return {number} - A randomly selected value.
  */
+
 RandomizedSet.prototype.getRandom = function() {
     // Generate a random index between 0 and list.length - 1
     const randomIndex = Math.floor(Math.random() * this.list.length);
