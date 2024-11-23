@@ -35,6 +35,13 @@ var intToRoman = function(num) {
     return result;
 };
 
+// Example usage
+console.log(intToRoman(3749)); // Output: "MMMDCCXLIX"
+console.log(intToRoman(58));   // Output: "LVIII"
+console.log(intToRoman(1994)); // Output: "MCMXCIV"
+console.log(intToRoman(9));    // Output: "IX"
+console.log(intToRoman(40));   // Output: "XL"
+
 /*
 Explanation:
 
