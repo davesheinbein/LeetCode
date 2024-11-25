@@ -35,6 +35,26 @@ var canCompleteCircuit = function(gas, cost) {
     return startIndex;
 };
 
+// Example 1
+let gas1 = [1, 2, 3, 4, 5];
+let cost1 = [3, 4, 5, 1, 2];
+console.log(canCompleteCircuit(gas1, cost1));  // Output: 3
+
+// Example 2
+let gas2 = [2, 3, 4];
+let cost2 = [3, 4, 3];
+console.log(canCompleteCircuit(gas2, cost2));  // Output: -1
+
+// Example 3
+let gas3 = [5, 1, 2, 3, 4];
+let cost3 = [4, 4, 4, 4, 5];
+console.log(canCompleteCircuit(gas3, cost3));  // Output: 0
+
+// Example 4
+let gas4 = [2, 3, 4, 5, 6];
+let cost4 = [3, 4, 5, 6, 7];
+console.log(canCompleteCircuit(gas4, cost4));  // Output: -1
+
 /*
 Explanation:
 
