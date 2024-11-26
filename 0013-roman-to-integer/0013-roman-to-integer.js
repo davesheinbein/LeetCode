@@ -33,6 +33,37 @@ var romanToInt = function (s) {
 	return total; // Return the computed total.
 };
 
+console.log(romanToInt("III")); 
+// Output: 3
+// Explanation: I = 1, I = 1, I = 1. Total = 3.
+
+console.log(romanToInt("LVIII")); 
+// Output: 58
+// Explanation: L = 50, V = 5, I = 1, I = 1, I = 1. Total = 58.
+
+console.log(romanToInt("MCMXCIV")); 
+// Output: 1994
+// Explanation: 
+// M = 1000, C = 100 (subtracted, because 100 < M),
+// M = 1000 (add), X = 10 (subtracted, because 10 < C),
+// C = 100 (add), I = 1 (subtracted, because 1 < V), V = 5 (add). 
+// Total = 1994.
+
+console.log(romanToInt("IX")); 
+// Output: 9
+// Explanation: I = 1, X = 10 (subtracted, because 1 < 10). Total = 9.
+
+console.log(romanToInt("XL")); 
+// Output: 40
+// Explanation: X = 10, L = 50 (subtracted, because 10 < 50). Total = 40.
+
+console.log(romanToInt("CDXLIV")); 
+// Output: 444
+// Explanation:
+// C = 100, D = 500 (subtracted, because 100 < 500),
+// X = 10, L = 50 (subtracted, because 10 < 50),
+// I = 1, V = 5 (subtracted, because 1 < 5). Total = 444.
+
 /*
 Explanation:
 
