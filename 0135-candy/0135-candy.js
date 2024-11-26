@@ -33,7 +33,25 @@ var candy = function (ratings) {
 	);
 };
 
+// Example 
+let ratings1 = [1, 0, 2];
+console.log("Example 1 - Ratings:", ratings1);
+console.log("Total Candies:", candy(ratings1));  // Output should be 5
 
+// Example 2
+let ratings2 = [1, 2, 2];
+console.log("Example 2 - Ratings:", ratings2);
+console.log("Total Candies:", candy(ratings2));  // Output should be 4
+
+// Example 3
+let ratings3 = [3, 2, 1, 4, 5, 2];
+console.log("Example 3 - Ratings:", ratings3);
+console.log("Total Candies:", candy(ratings3));  // Output should be 11
+
+// Example 4
+let ratings4 = [1, 3, 2, 2, 1];
+console.log("Example 4 - Ratings:", ratings4);
+console.log("Total Candies:", candy(ratings4));  // Output should be 7
 
 /*
 Explanation:
