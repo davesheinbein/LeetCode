@@ -29,6 +29,7 @@ var convert = function (s, numRows) {
 	return rows.join('');
 };
 
+// Examples:
 console.log(convert('PAYPALISHIRING', 3));
 // Output: "PAHNAPLSIIGYIR"
 
@@ -84,6 +85,4 @@ Input: `s = "A"`, `numRows = 1`
 Complexity:
 - Time Complexity: \(O(n)\), where \(n\) is the length of the string. Each character is visited once.
 - Space Complexity: \(O(n)\), for storing the rows.
-
-Console Log Examples:
 */
