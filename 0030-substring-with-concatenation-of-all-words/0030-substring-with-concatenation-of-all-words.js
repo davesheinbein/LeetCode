@@ -10,7 +10,7 @@ var findSubstring = function (s, words) {
 	const wordLength = words[0].length; // All words have the same length
 	const wordCount = words.length; // Total number of words
 	const substringLength = wordLength * wordCount; // Total length of concatenated substring
-	const wordMap = new Map(); // Map to store word frequencies
+	const wordMap = new Map(); // Map to store word frequencies in a new array
 
 	// Populate the map with the frequency of words in the input array
 	for (let word of words) {
