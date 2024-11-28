@@ -42,7 +42,7 @@ console.log(lengthOfLongestSubstring('')); // Output: 0
 console.log(lengthOfLongestSubstring('au')); // Output: 2
 
 /*
-Explanation for a coding interview:
+Explanation:
 
 1. What is the problem asking?
    - The task is to find the longest substring in a given string `s` where no characters repeat.
@@ -62,7 +62,7 @@ Explanation for a coding interview:
    - Time Complexity: \(O(n)\), where \(n\) is the length of the string. Each character is added and removed from the set at most once.
    - Space Complexity: \(O(k)\), where \(k\) is the size of the character set (for ASCII, at most 128).
 
-5. Example Walkthroughs:
+5. Examples:
 
    Example 1: `s = "abcabcbb"`
    - `left = 0`, `right = 0`, `charSet = {}`
