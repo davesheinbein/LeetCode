@@ -43,7 +43,7 @@ var gameOfLife = function(board) {
                 // Rule 3: Dead cell with exactly 3 live neighbors becomes alive
                 board[i][j] = 2;  // Mark the cell as alive in the next state
             }
-            // Rule 4: (Implicit in the logic) Any dead cell with exactly three live neighbors becomes a live cell.
+            // Rule 4:Any dead cell with exactly three live neighbors becomes a live cell.  (Implicit in the logic) 
         }
     }
 
