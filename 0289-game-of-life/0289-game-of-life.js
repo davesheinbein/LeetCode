@@ -39,7 +39,7 @@ var gameOfLife = function(board) {
                 else {
                     board[i][j] = 1;  // Keep the cell alive
                 }
-            } else if (board[i][j] === 0 && liveNeighbors === 3) {  // If the current cell is dead
+            } else if (board[i][j] === 0 && liveNeighbors === 3) {  // Rule 4: Dead cell with exactly 3 live neighbors becomes alive
                 // Rule 3: Dead cell with exactly 3 live neighbors becomes alive
                 board[i][j] = 2;  // Mark the cell as alive in the next state
             }
