@@ -3,6 +3,7 @@
  * @param {string} secondString
  * @return {boolean}
  */
+
 var isAnagram = function(firstString, secondString) {
     // Check if the strings have the same length
     if (firstString.length !== secondString.length) {
