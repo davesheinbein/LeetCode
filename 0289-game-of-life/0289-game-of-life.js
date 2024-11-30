@@ -2,6 +2,7 @@
  * @param {number[][]} board - The board representing the current state of the game.
  * @return {void} Do not return anything, modify board in-place instead.
  */
+
 var gameOfLife = function(board) {
     const m = board.length;  // Get the number of rows in the board.
     const n = board[0].length;  // Get the number of columns in the board.
@@ -59,6 +60,46 @@ var gameOfLife = function(board) {
         }
     }
 };
+
+
+// Example 1: A "blinker" oscillator pattern in Game of Life
+let board1 = [
+    [0, 0, 0],
+    [1, 1, 1],
+    [0, 0, 0]
+];
+console.log("Initial board1:");
+console.log(board1);
+gameOfLife(board1);
+console.log("After one step:");
+console.log(board1);
+
+// Example 2: A "block" still life pattern in Game of Life
+let board2 = [
+    [0, 0, 0, 0],
+    [0, 1, 1, 0],
+    [0, 1, 1, 0],
+    [0, 0, 0, 0]
+];
+console.log("Initial board2:");
+console.log(board2);
+gameOfLife(board2);
+console.log("After one step:");
+console.log(board2);
+
+// Example 3: A "glider" spaceship pattern in Game of Life
+let board3 = [
+    [0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0]
+];
+console.log("Initial board3:");
+console.log(board3);
+gameOfLife(board3);
+console.log("After one step:");
+console.log(board3);
 
 /*
 Explanation:
