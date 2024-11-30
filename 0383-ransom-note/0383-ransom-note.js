@@ -5,7 +5,7 @@
  */
 
 var canConstruct = function(ransomNote, magazine) {
-    // Step 1: Create a frequency count for the letters in the magazine
+    // Create a frequency count for the letters in the magazine
     const letterCount = new Array(26).fill(0);  // Array to store the count of each letter (a to z)
     
     // Count the frequency of each letter in the magazine
@@ -13,7 +13,7 @@ var canConstruct = function(ransomNote, magazine) {
         letterCount[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
     }
     
-    // Step 2: Check if we can construct the ransomNote using letters from the magazine
+    // Check if we can construct the ransomNote using letters from the magazine
     for (let char of ransomNote) {
         const index = char.charCodeAt(0) - 'a'.charCodeAt(0);  // Find the index of the letter
         
