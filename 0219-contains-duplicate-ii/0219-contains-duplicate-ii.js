@@ -3,6 +3,7 @@
  * @param {number} k
  * @return {boolean}
  */
+
 var containsNearbyDuplicate = function(nums, k) {
     // Step 1: Create a map to store the last seen index of each number
     const lastSeenIndex = new Map();
