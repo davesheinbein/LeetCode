@@ -4,13 +4,13 @@
  */
 
 var longestConsecutive = function(nums) {
-    // Step 1: Create a Set for fast lookups and eliminate duplicates
+    // Create a Set for fast lookups and eliminate duplicates
     const numSet = new Set(nums);
 
-    // Step 2: Initialize a variable to track the longest sequence length
+    // Initialize a variable to track the longest sequence length
     let longestSequence = 0;
 
-    // Step 3: Iterate through each number in the array
+    // Iterate through each number in the array
     for (const num of nums) {
         // Check if the current number is the start of a sequence
         if (!numSet.has(num - 1)) { 
@@ -29,7 +29,7 @@ var longestConsecutive = function(nums) {
         }
     }
 
-    // Step 4: Return the length of the longest sequence
+    // Return the length of the longest sequence
     return longestSequence;
 };
 
