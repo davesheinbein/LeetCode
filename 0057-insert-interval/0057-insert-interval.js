@@ -5,10 +5,10 @@
  */
 
 var insert = function (intervals, newInterval) {
-	// Step 1: Initialize an array to store the result
+	// Initialize an array to store the result
 	const result = [];
 
-	// Step 2: Iterate through the intervals
+	// Iterate through the intervals
 	for (const interval of intervals) {
 		// If the current interval is completely before the new interval
 		if (interval[1] < newInterval[0]) {
@@ -32,10 +32,10 @@ var insert = function (intervals, newInterval) {
 		}
 	}
 
-	// Step 3: Add the remaining newInterval (if any) to the result
+	// Add the remaining newInterval (if any) to the result
 	result.push(newInterval);
 
-	// Step 4: Return the result array
+	// Return the result array
 	return result;
 };
 
