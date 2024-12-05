@@ -9,6 +9,8 @@ var evalRPN = function (tokens) {
 
 	// Loop through each token
 	for (const token of tokens) {
+    // for (let i = 0; i < tokens.length; i++) --- alt 
+    //     const token = tokens[i]; --- alt 
 		if (!isNaN(token)) {
 			// If the token is a number, push it onto the stack
 			stack.push(Number(token));
