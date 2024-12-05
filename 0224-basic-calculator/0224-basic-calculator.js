@@ -2,6 +2,7 @@
  * @param {string} s
  * @return {number}
  */
+
 var calculate = function (s) {
 	// Initialize variables
 	let stack = []; // Stack to handle parentheses
@@ -55,17 +56,35 @@ console.log(calculate('10 - (2 + (3 - 5))')); // Output: 10
 
 /*
 Explanation:
-1. The algorithm uses a stack to handle nested parentheses by storing the current result and sign.
-2. It processes numbers, operators, and parentheses character by character.
-3. For numbers, it builds them by multiplying the previous value by 10 and adding the current digit.
-4. For operators '+', '-', it adds the number processed so far to the result with the appropriate sign.
-5. For '(', it pushes the current result and sign to the stack, resetting them for the new sub-expression.
-6. For ')', it completes the sub-expression, pops the previous result and sign, and combines them.
+1. Using a Stack for Parentheses:
+   - Parentheses create sub-expressions that need to be evaluated independently.
+   - When encountering a '(', the current state (result and sign) is pushed onto the stack. This allows us to evaluate the sub-expression as a standalone unit.
+   - When encountering a ')', we complete the sub-expression, retrieve the previous state from the stack, and combine it with the evaluated result. This ensures correct precedence handling for nested expressions.
+
+2. Processing Numbers:
+   - Numbers can have multiple digits, so we build them by multiplying the current value by 10 and adding the new digit. This ensures that `123` is processed as `1*100 + 2*10 + 3` rather than as three separate numbers.
+
+3. Handling '+', '-' Operators:
+   - The `currentSign` variable ensures that numbers are added or subtracted based on the most recent operator.
+   - Whenever a '+' or '-' is encountered, the number processed so far is added to the result, and `currentSign` is updated to reflect the new operator.
+
+4. Resetting State at '(':
+   - When '(' is encountered, the current result and sign are pushed onto the stack, and the result is reset to 0. This isolates the evaluation of the sub-expression.
+
+5. Combining State at ')':
+   - When ')' is encountered, the result of the sub-expression is multiplied by the sign popped from the stack and added to the previous result popped from the stack. This step "un-nests" the sub-expression and integrates it with the outer expression.
+
+6. End of String Handling:
+   - At the end of the string, any remaining number is added to the result. This ensures that trailing numbers are included.
+
+Why this approach works:
+- Arithmetic operations in strings are naturally left-to-right, except for nested expressions and parentheses, which require careful tracking. Using a stack allows us to "pause" the evaluation of an outer expression, evaluate an inner one, and then seamlessly continue.
+- By processing numbers immediately upon encountering operators or parentheses, we ensure no number is skipped or double-counted.
 
 Time Complexity:
-- O(n): We traverse the string once, processing each character.
+- O(n): Each character is processed once.
 
 Space Complexity:
-- O(n): The stack stores results and signs for nested parentheses.
+- O(n): The stack grows with the depth of nested parentheses.
 
 */
