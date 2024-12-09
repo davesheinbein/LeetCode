@@ -78,4 +78,49 @@ Time Complexity:
 
 Space Complexity:
 - O(1): The reversal is done in-place, with only a few additional pointers used for the process. Therefore, the space complexity is O(1) excluding the input and output.
+
+---
+
+**How the Original List is Updated During Reversal:**
+
+Here’s how the nodes in the list are modified during the reversal process:
+
+Initial List:
+Let's say the list is: `1 -> 2 -> 3 -> 4 -> 5`
+If `left = 2` and `right = 4`, the portion of the list we want to reverse is from position 2 to position 4, i.e., `2 -> 3 -> 4`.
+
+Step 1: Initialize `prev`, `start`, and `then`
+
+Before the reversal, we have:
+- `prev`: points to node `1`.
+- `start`: points to node `2`.
+- `then`: points to node `3`.
+
+Step 2: Reversal Process
+For each iteration, the `then` node will be moved to the front of the sublist, and the `next` pointers will be updated accordingly.
+
+First Iteration (i = 0):
+- `start.next = then.next` (link `2 -> 4`)
+- `then.next = prev.next` (link `3 -> 2`)
+- `prev.next = then` (link `1 -> 3`)
+- Now, `then = start.next` points to node `4`.
+
+List after the first iteration:
+- `1 -> 3 -> 2 -> 4 -> 5`
+
+Second Iteration (i = 1):
+- `start.next = then.next` (link `2 -> 5`)
+- `then.next = prev.next` (link `4 -> 3`)
+- `prev.next = then` (link `1 -> 4`)
+- Now, `then = start.next` points to node `5`.
+
+List after the second iteration:
+- `1 -> 4 -> 3 -> 2 -> 5`
+
+Step 3: Return the Modified List
+The sublist `2 -> 3 -> 4` has been reversed to `4 -> 3 -> 2`, and the final list is:
+- `1 -> 4 -> 3 -> 2 -> 5`
+
+The function returns `dummy.next`, which points to the head of the modified list: `1 -> 4 -> 3 -> 2 -> 5`.
+
 */
