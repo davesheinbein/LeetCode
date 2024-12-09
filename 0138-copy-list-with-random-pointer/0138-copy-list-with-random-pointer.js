@@ -69,8 +69,6 @@ var copyRandomList = function (head) {
 	return copiedHead;
 };
 
-// Example explanation:
-
 /*
 Explanation:
 1. Interweaving Original and Copied Nodes:
