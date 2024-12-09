@@ -73,4 +73,9 @@ Explanation:
 
 5. Space Complexity:
    - O(1), because we only use a constant amount of space. The extra space used is for the pointers (`prev` and `current`), which do not depend on the size of the input list.
+   
+Key Concepts:
+   - Dummy Node: The dummy node simplifies edge cases, such as when the head node contains duplicates or when there are no nodes in the list.
+   - Two Pointers (prev and current): The prev pointer is used to update the list when duplicates are skipped. The current pointer is used to traverse and identify duplicates.
+   - Skipping Duplicates: By using the current pointer to skip over duplicate nodes and adjusting prev.next, we can remove all duplicates efficiently.
 */
