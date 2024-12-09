@@ -62,35 +62,35 @@ var removeNthFromEnd = function (head, n) {
 Explanation:
 
 1. Dummy Node:
-	- A dummy node is introduced at the beginning of the list to simplify operations, especially when the node to remove is the head node (or when there's only one node in the list).
-	- `dummy.next` initially points to the head of the original list. This helps us avoid special edge case handling when modifying the head of the list.
-	
-	Example:
-	- Initially, the list looks like this: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
-	- After setting `dummy.next = head`, we get: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
+   - A dummy node is introduced at the beginning of the list to simplify operations, especially when the node to remove is the head node (or when there's only one node in the list).
+   - `dummy.next` initially points to the head of the original list. This helps us avoid special edge case handling when modifying the head of the list.
+   
+   Example:
+   - Initially, the list looks like this: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
+   - After setting `dummy.next = head`, we get: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
 
 2. Two Pointers:
-	- The `fast` pointer is moved `n + 1` steps ahead of the `slow` pointer. This ensures that when `fast` reaches the end of the list, `slow` will be just before the node to be removed.
-	- Both pointers move at the same speed after this initial gap, maintaining a fixed difference of `n + 1` nodes between them.
-	
-	Example (for n = 2):
-	- Initially: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
-	- After moving `fast` pointer `n + 1 = 3` steps ahead, `fast` points to node `3` and `slow` points to `dummy(0)`.
-	- After the loop, `slow` points to node `3` and `fast` reaches the end of the list (`null`).
+   - The `fast` pointer is moved `n + 1` steps ahead of the `slow` pointer. This ensures that when `fast` reaches the end of the list, `slow` will be just before the node to be removed.
+   - Both pointers move at the same speed after this initial gap, maintaining a fixed difference of `n + 1` nodes between them.
+   
+   Example (for n = 2):
+   - Initially: `dummy(0) -> 1 -> 2 -> 3 -> 4 -> 5`
+   - After moving `fast` pointer `n + 1 = 3` steps ahead, `fast` points to node `3` and `slow` points to `dummy(0)`.
+   - After the loop, `slow` points to node `3` and `fast` reaches the end of the list (`null`).
 
 3. Removing the Node:
-	- To remove the nth node from the end, we update the `next` pointer of `slow` to skip over the node that needs to be removed (node 4 in this case).
-	- This effectively removes the node from the list and links the previous node (`slow`) to the next node (`5`).
-	
-	Example (after removal):
-	- List becomes: `dummy(0) -> 1 -> 2 -> 3 -> 5` after removing node 4.
+   - To remove the nth node from the end, we update the `next` pointer of `slow` to skip over the node that needs to be removed (node 4 in this case).
+   - This effectively removes the node from the list and links the previous node (`slow`) to the next node (`5`).
+   
+   Example (after removal):
+   - List becomes: `dummy(0) -> 1 -> 2 -> 3 -> 5` after removing node 4.
 
 4. Edge Case:
-	- If the list contains only one node, and `n = 1`, the dummy node helps us handle the case where we remove the only node and return an empty list (`dummy.next = null`).
+   - If the list contains only one node, and `n = 1`, the dummy node helps us handle the case where we remove the only node and return an empty list (`dummy.next = null`).
 
 5. Time Complexity:
-	- O(sz), where `sz` is the number of nodes in the list. We only traverse the list once using the two pointers, so the time complexity is proportional to the length of the list.
+   - O(sz), where `sz` is the number of nodes in the list. We only traverse the list once using the two pointers, so the time complexity is proportional to the length of the list.
 
 6. Space Complexity:
-	- O(1), since we are only using a constant amount of extra space. The space used does not grow with the size of the list; we only need a few pointers (`dummy`, `fast`, `slow`).
+   - O(1), since we are only using a constant amount of extra space. The space used does not grow with the size of the list; we only need a few pointers (`dummy`, `fast`, `slow`).
 */
