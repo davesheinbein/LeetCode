@@ -12,25 +12,25 @@
  * @param {TreeNode} root - The root node of the binary tree
  * @return {TreeNode} - The root node of the inverted binary tree
  */
-var invertTree = function(root) {
-    // Base case: if the node is null, return null. There is nothing to invert.
-    if (root === null) {
-        return null;  // If the tree is empty (root is null), no inversion is needed.
-    }
+var invertTree = function (root) {
+	// Base case: if the node is null, return null. There is nothing to invert.
+	if (root === null) {
+		return null; // If the tree is empty (root is null), no inversion is needed.
+	}
 
-    // Swap the left and right children of the current node
-    // Create a temporary variable to store the left child temporarily
-    let temp = root.left; // Save the left child to a temporary variable
-    root.left = root.right; // Assign the right child to the left child position
-    root.right = temp; // Assign the saved left child to the right child position
+	// Swap the left and right children of the current node
+	// Create a temporary variable to store the left child temporarily
+	let temp = root.left; // Save the left child to a temporary variable
+	root.left = root.right; // Assign the right child to the left child position
+	root.right = temp; // Assign the saved left child to the right child position
 
-    // Recursively invert the left and right subtrees
-    // Now that the children have been swapped, we need to invert the subtrees
-    invertTree(root.left);  // Invert the left subtree (which is originally the right subtree)
-    invertTree(root.right); // Invert the right subtree (which is originally the left subtree)
+	// Recursively invert the left and right subtrees
+	// Now that the children have been swapped, we need to invert the subtrees
+	invertTree(root.left); // Invert the left subtree (which is originally the right subtree)
+	invertTree(root.right); // Invert the right subtree (which is originally the left subtree)
 
-    // Return the root of the inverted tree (it is the same root node but with its subtrees inverted)
-    return root;
+	// Return the root of the inverted tree (it is the same root node but with its subtrees inverted)
+	return root;
 };
 
 /*
@@ -57,7 +57,7 @@ Explanation:
    - The space complexity is O(h), where `h` is the height of the tree. This is due to the recursion stack, which grows as the depth of the tree increases. 
    - In the worst case (for an unbalanced tree), the recursion stack could grow to O(n), where `n` is the number of nodes.
 
-### Example Walkthrough:
+Examples:
 
 1. Example 1:
    - Input: `root = [4, 2, 7, 1, 3, 6, 9]`
