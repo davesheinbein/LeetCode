@@ -97,9 +97,8 @@ Node:
 
 Is the basic building block of a linked list. Each node in a linked list typically contains at least two pieces of information:
 
-val (or value): This is the data that the node holds (it could be any type of data like numbers, strings, etc.).
-
-next: This is a pointer (or reference) to the next node in the list. It helps us traverse the list.
+- val (or value): This is the data that the node holds (it could be any type of data like numbers, strings, etc.).
+- next: This is a pointer (or reference) to the next node in the list. It helps us traverse the list.
 
 In the code, a random pointer is added to the Node, which is not typically present in a standard linked list. This pointer can point to any node in the list (or be null), and it adds a level of complexity, especially when we need to duplicate the list. This random pointer is the reason why the list is called a "random pointer list".
 */
