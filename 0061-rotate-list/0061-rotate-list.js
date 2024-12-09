@@ -13,45 +13,59 @@
  */
 
 var rotateRight = function (head, k) {
-	// Edge Case: If the list is empty, has only one node, or no rotation is needed (k = 0)
-	if (!head || !head.next || k === 0) {
-		return head; // If the list is empty or has only one node, or k is 0, return the head as is.
-	}
+    // Edge Case: If the list is empty, has only one node, or no rotation is needed (k = 0)
+    if (!head || !head.next || k === 0) {
+        return head; // If the list is empty or has only one node, or k is 0, return the head as is.
+    }
 
-	// Find the length of the linked list
-	let length = 1; // Start with length 1 since we are counting the head node.
-	let current = head; // Use a pointer to traverse the list.
+    // Find the length of the linked list
+    let length = 1; // Start with length 1 since we are counting the head node.
+    let current = head; // Use a pointer to traverse the list.
 
-	// Traverse the entire list to calculate its length
-	while (current.next !== null) {
-		length++; // Increment the length for each node.
-		current = current.next; // Move to the next node.
-	}
+    // Traverse the entire list to calculate its length
+    while (current.next !== null) {
+        length++; // Increment the length for each node.
+        current = current.next; // Move to the next node.
+    }
 
-	// Calculate the effective number of rotations needed
-	k = k % length; // If k is greater than the length, rotating by k is equivalent to rotating by k % length.
-	if (k === 0) {
-		return head; // If k is 0 after modulo operation, return the head as no rotation is needed.
-	}
+    // Visualizing the list at this point:
+    // Suppose the list is: 1 -> 2 -> 3 -> 4 -> 5 -> null
+    // At this point, `length = 5`, `current` is at node 5.
 
-	// Make the list circular
-	current.next = head; // Link the last node back to the head to form a circular linked list.
+    // Calculate the effective number of rotations needed
+    k = k % length; // If k is greater than the length, rotating by k is equivalent to rotating by k % length.
+    if (k === 0) {
+        return head; // If k is 0 after modulo operation, return the head as no rotation is needed.
+    }
 
-	// Find the new tail and new head after rotation
-	let newTail = head; // Start with the head to find the new tail.
+    // Visualizing after modulo operation:
+    // If k = 2 and length = 5, then k = 2 % 5 = 2. We need to rotate the list by 2 positions.
 
-	// Traverse to the (length - k)th node, which will be the new tail of the rotated list.
-	for (let i = 1; i < length - k; i++) {
-		newTail = newTail.next; // Move the newTail pointer forward.
-	}
+    // Make the list circular
+    current.next = head; // Link the last node back to the head to form a circular linked list.
+    // Now the list becomes circular: 1 -> 2 -> 3 -> 4 -> 5 -> 1 -> 2 -> 3 -> 4 -> 5 -> ...
 
-	// Set the new head and break the circular list
-	let newHead = newTail.next; // The new head is the node after the new tail.
-	newTail.next = null; // Break the circular link by setting the new tail's next to null.
+    // Find the new tail and new head after rotation
+    let newTail = head; // Start with the head to find the new tail.
 
-	// Return the new head of the rotated list
-	return newHead; // The new head is the starting point of the rotated list.
+    // Traverse to the (length - k)th node, which will be the new tail of the rotated list.
+    for (let i = 1; i < length - k; i++) {
+        newTail = newTail.next; // Move the newTail pointer forward.
+    }
+
+    // Visualizing after rotation:
+    // If k = 2, the new tail is at node 3 (the (5-2)=3rd node), and the new head is at node 4.
+    // The new tail (node 3) will point to null to break the circular link.
+    let newHead = newTail.next; // The new head is the node after the new tail.
+    newTail.next = null; // Break the circular link by setting the new tail's next to null.
+
+    // Visualizing the rotated list:
+    // The list now becomes: 4 -> 5 -> 1 -> 2 -> 3 -> null
+
+    // Return the new head of the rotated list
+    return newHead; // The new head is the starting point of the rotated list.
 };
+
 
 /*
 Explanation:
