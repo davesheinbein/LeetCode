@@ -15,37 +15,37 @@
  * @return {ListNode} - The head of the modified linked list.
  */
 var partition = function (head, x) {
-	// Step 1: Create two dummy nodes to simplify handling of edge cases
-	let lessThanHead = new ListNode(0);  // Dummy node for the "less than x" list
-	let greaterThanOrEqualHead = new ListNode(0);  // Dummy node for the "greater than or equal to x" list
+	// Create two dummy nodes to simplify handling of edge cases
+	let lessThanHead = new ListNode(0); // Dummy node for the "less than x" list
+	let greaterThanOrEqualHead = new ListNode(0); // Dummy node for the "greater than or equal to x" list
 
-	// Step 2: Create pointers to traverse the two lists
-	let lessThan = lessThanHead;  // Pointer for the "less than x" list
-	let greaterThanOrEqual = greaterThanOrEqualHead;  // Pointer for the "greater than or equal to x" list
+	// Create pointers to traverse the two lists
+	let lessThan = lessThanHead; // Pointer for the "less than x" list
+	let greaterThanOrEqual = greaterThanOrEqualHead; // Pointer for the "greater than or equal to x" list
 
-	// Step 3: Traverse the original list to partition the nodes
-	let current = head;  // Pointer for traversing the original list
+	// Traverse the original list to partition the nodes
+	let current = head; // Pointer for traversing the original list
 	while (current !== null) {
 		if (current.val < x) {
-			// Step 4: If the current node's value is less than x, add it to the "less than x" list
-			lessThan.next = current;  // Link the current node to the "less than x" list
-			lessThan = lessThan.next;  // Move the pointer for the "less than x" list forward
+			// If the current node's value is less than x, add it to the "less than x" list
+			lessThan.next = current; // Link the current node to the "less than x" list
+			lessThan = lessThan.next; // Move the pointer for the "less than x" list forward
 		} else {
-			// Step 5: If the current node's value is greater than or equal to x, add it to the "greater than or equal to x" list
-			greaterThanOrEqual.next = current;  // Link the current node to the "greater than or equal to x" list
-			greaterThanOrEqual = greaterThanOrEqual.next;  // Move the pointer for the "greater than or equal to x" list forward
+			// If the current node's value is greater than or equal to x, add it to the "greater than or equal to x" list
+			greaterThanOrEqual.next = current; // Link the current node to the "greater than or equal to x" list
+			greaterThanOrEqual = greaterThanOrEqual.next; // Move the pointer for the "greater than or equal to x" list forward
 		}
-		current = current.next;  // Move to the next node in the original list
+		current = current.next; // Move to the next node in the original list
 	}
 
-	// Step 6: Terminate the "greater than or equal to x" list to avoid a circular reference
-	greaterThanOrEqual.next = null;  // Set the next pointer of the last node in the "greater than or equal to x" list to null
+	// Terminate the "greater than or equal to x" list to avoid a circular reference
+	greaterThanOrEqual.next = null; // Set the next pointer of the last node in the "greater than or equal to x" list to null
 
-	// Step 7: Merge the two lists by connecting the "less than x" list to the "greater than or equal to x" list
-	lessThan.next = greaterThanOrEqualHead.next;  // Skip the dummy node of the "greater than or equal to x" list and attach it
+	// Merge the two lists by connecting the "less than x" list to the "greater than or equal to x" list
+	lessThan.next = greaterThanOrEqualHead.next; // Skip the dummy node of the "greater than or equal to x" list and attach it
 
-	// Step 8: Return the head of the modified list, starting from the node after the "less than x" dummy node
-	return lessThanHead.next;  // Return the head of the new partitioned list
+	// Return the head of the modified list, starting from the node after the "less than x" dummy node
+	return lessThanHead.next; // Return the head of the new partitioned list
 };
 
 /*
