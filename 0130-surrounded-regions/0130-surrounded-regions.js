@@ -2,47 +2,54 @@
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
  */
-var solve = function(board) {
-    const rows = board.length;
-    const cols = board[0].length;
+var solve = function (board) {
+	const rows = board.length;
+	const cols = board[0].length;
 
-    if (rows === 0 || cols === 0) return;
+	if (rows === 0 || cols === 0) return;
 
-    // Helper function for DFS
-    const dfs = (i, j) => {
-        // Base case: Out of bounds or not an 'O'.
-        if (i < 0 || i >= rows || j < 0 || j >= cols || board[i][j] !== 'O') return;
+	// Helper function for DFS
+	const dfs = (i, j) => {
+		// Base case: Out of bounds or not an 'O'.
+		if (
+			i < 0 ||
+			i >= rows ||
+			j < 0 ||
+			j >= cols ||
+			board[i][j] !== 'O'
+		)
+			return;
 
-        // Mark the cell as temporary
-        board[i][j] = 'T';
+		// Mark the cell as temporary
+		board[i][j] = 'T';
 
-        // Explore the four directions
-        dfs(i + 1, j);
-        dfs(i - 1, j);
-        dfs(i, j + 1);
-        dfs(i, j - 1);
-    };
+		// Explore the four directions
+		dfs(i + 1, j);
+		dfs(i - 1, j);
+		dfs(i, j + 1);
+		dfs(i, j - 1);
+	};
 
-    // Step 1: Mark all 'O's connected to the boundary as 'T'.
-    for (let i = 0; i < rows; i++) {
-        if (board[i][0] === 'O') dfs(i, 0); // Left boundary
-        if (board[i][cols - 1] === 'O') dfs(i, cols - 1); // Right boundary
-    }
-    for (let j = 0; j < cols; j++) {
-        if (board[0][j] === 'O') dfs(0, j); // Top boundary
-        if (board[rows - 1][j] === 'O') dfs(rows - 1, j); // Bottom boundary
-    }
+	// Mark all 'O's connected to the boundary as 'T'.
+	for (let i = 0; i < rows; i++) {
+		if (board[i][0] === 'O') dfs(i, 0); // Left boundary
+		if (board[i][cols - 1] === 'O') dfs(i, cols - 1); // Right boundary
+	}
+	for (let j = 0; j < cols; j++) {
+		if (board[0][j] === 'O') dfs(0, j); // Top boundary
+		if (board[rows - 1][j] === 'O') dfs(rows - 1, j); // Bottom boundary
+	}
 
-    // Step 2: Transform the board
-    for (let i = 0; i < rows; i++) {
-        for (let j = 0; j < cols; j++) {
-            if (board[i][j] === 'O') {
-                board[i][j] = 'X'; // Captured
-            } else if (board[i][j] === 'T') {
-                board[i][j] = 'O'; // Restore non-surrounded regions
-            }
-        }
-    }
+	// Transform the board
+	for (let i = 0; i < rows; i++) {
+		for (let j = 0; j < cols; j++) {
+			if (board[i][j] === 'O') {
+				board[i][j] = 'X'; // Captured
+			} else if (board[i][j] === 'T') {
+				board[i][j] = 'O'; // Restore non-surrounded regions
+			}
+		}
+	}
 };
 
 /*
