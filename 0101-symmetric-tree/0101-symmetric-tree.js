@@ -12,6 +12,7 @@
  * @param {TreeNode} root - The root node of the binary tree
  * @return {boolean} - Returns true if the tree is symmetric, otherwise false
  */
+
 var isSymmetric = function(root) {
     if (!root) {
         return true; // An empty tree is symmetric
@@ -61,25 +62,21 @@ Examples:
 1. Example 1:
    - Input: `root = [1, 2, 2, 3, 4, 4, 3]`
    - The tree structure is:
-     ```
          1
         / \
        2   2
       / \ / \
      3  4 4  3
-     ```
    - The left and right subtrees are mirrors of each other, so the output is `true`.
 
 2. Example 2:
    - Input: `root = [1, 2, 2, null, 3, null, 3]`
    - The tree structure is:
-     ```
          1
         / \
        2   2
         \    \
          3    3
-     ```
    - The left and right subtrees are not mirrors of each other, so the output is `false`.
 
 3. Edge Case:
