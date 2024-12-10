@@ -26,7 +26,7 @@ var isValidBST = function (root) {
 	 * @param {number} max - The maximum allowable value for the current node.
 	 * @return {boolean} - Returns `true` if the subtree rooted at `node` is valid.
 	 */
-	
+
 	const validate = (node, min, max) => {
 		// Base Case: If the node is null, it is valid (empty tree is a BST).
 		if (!node) return true;
@@ -49,13 +49,23 @@ var isValidBST = function (root) {
 };
 
 /**
- * Explanation:
+ Explanation:
  
-  The function determines whether a binary tree satisfies the Binary Search Tree (BST) property:
-  - For each node, all values in its left subtree must be less than the node's value.
-  - All values in its right subtree must be greater than the node's value.
+ The function checks whether a given binary tree adheres to the Binary Search Tree (BST) property. This property ensures the following for every node in the tree:
+
+ 1. Left Subtree Property: All values in the left subtree of a node must be strictly less than the node's value.
+ 2. Right Subtree Property: All values in the right subtree of a node must be strictly greater than the node's value.
+
+ To validate this, the algorithm uses a recursive approach that enforces a valid range of values for each node:
+ - Each node's value must lie within a specific range (min, max).
+ - The range is adjusted as we traverse down the tree:
+  - Left Child: The maximum value for the left subtree is the value of the current node.
+  - Right Child: The minimum value for the right subtree is the value of the current node.
+
+ By recursively validating the range for every node, the function ensures that the entire tree satisfies the BST property. If any node violates the range constraints, the function immediately determines that the tree is not a valid BST.
  
   Key Points:
+  
   1. Recursive Validation:
      - Use a helper function `validate` that checks if each node's value lies within a valid range `(min, max)`.
      - The range is updated as we move down the tree:
@@ -88,7 +98,7 @@ var isValidBST = function (root) {
   Validation Steps:
   - Node \(5\): Range \((-∞, +∞)\) → valid.
   - Node \(1\): Range \((-∞, 5)\) → valid.
-  - Node \(4\): Range \((5, +∞)\) → **invalid** (node \(4\) violates the BST property).
+  - Node \(4\): Range \((5, +∞)\) → invalid (node \(4\) violates the BST property).
  
   Output: `false`
  */
