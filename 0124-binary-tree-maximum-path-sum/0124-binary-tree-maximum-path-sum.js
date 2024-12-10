@@ -65,7 +65,7 @@ var maxPathSum = function (root) {
 };
 
 /*
-Detailed Explanation:
+Explanation:
 
 Key Concepts:
 1. Global Variable:
@@ -93,7 +93,7 @@ Complexity Analysis:
   - This accounts for the space used by the recursion stack.
   - For a balanced tree, \(h = \log n\); for a skewed tree, \(h = n\).
 
-Example Walkthrough:
+Examples:
 
 Example 1:
 Input: `root = [1, 2, 3]`
