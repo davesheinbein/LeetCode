@@ -61,7 +61,7 @@ Explanation:
 6. Space Complexity:
    - \( O(m) \): The maximum number of nodes in the queue at any point is proportional to the width of the tree.
 
-Example Walkthrough
+Examples:
 
 Input:
 Tree:
