@@ -85,6 +85,5 @@ Steps:
    - Right returns `1`.
    - Since both are non-null, `3` is the LCA.
 
-Output:
-`3`.
+Output: `3`.
 */
