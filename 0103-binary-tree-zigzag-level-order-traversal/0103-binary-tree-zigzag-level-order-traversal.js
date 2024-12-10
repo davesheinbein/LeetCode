@@ -85,7 +85,7 @@ var zigzagLevelOrder = function (root) {
   - Time: \(O(n)\), where \(n\) is the number of nodes in the tree (each node is processed once).
   - Space: \(O(n)\), for storing nodes in the queue and results.
  
-  Example Walkthrough:
+  Example:
  
   Input Tree:
         3
