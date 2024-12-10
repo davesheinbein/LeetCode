@@ -73,7 +73,8 @@ Explanation:
 5. Space Complexity:
    - O(h), where h is the height of the tree, since the stack stores at most h nodes at any time.
 
-Example Walkthrough:
+Examples:
+
 Input:
       7
      / \
