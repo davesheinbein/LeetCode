@@ -56,10 +56,12 @@ Each category contains subdirectories with specific problems, their respective s
 ## Depth-First Search
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## Union Find
 |  |
@@ -68,9 +70,14 @@ Each category contains subdirectories with specific problems, their respective s
 ## Graph
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## Shortest Path
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
+## Topological Sort
+|  |
+| ------- |
+| [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 <!---LeetCode Topics End-->
