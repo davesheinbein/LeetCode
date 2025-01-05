@@ -61,7 +61,7 @@ var calcEquation = function (equations, values, queries) {
 };
 
 /**
-Detailed Explanation:
+Explanation:
 
  1. Graph Construction:
     - The graph represents variables as nodes and equations as directed edges with weights.
