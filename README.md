@@ -50,12 +50,14 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0039-combination-sum](https://github.com/davesheinbein/LeetCode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
+| [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## String
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
+| [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -65,6 +67,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/davesheinbein/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -121,10 +124,12 @@ Each category contains subdirectories with specific problems, their respective s
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
 | [0052-n-queens-ii](https://github.com/davesheinbein/LeetCode/tree/master/0052-n-queens-ii) |
 | [0077-combinations](https://github.com/davesheinbein/LeetCode/tree/master/0077-combinations) |
+| [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 ## Dynamic Programming
 |  |
