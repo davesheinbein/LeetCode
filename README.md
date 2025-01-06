@@ -53,6 +53,7 @@ Each category contains subdirectories with specific problems, their respective s
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
+| [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
 ## String
 |  |
 | ------- |
@@ -131,6 +132,7 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
+| [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -147,6 +149,7 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+| [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
 ## Sorting
 |  |
 | ------- |
@@ -155,4 +158,8 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+## Tree
+|  |
+| ------- |
+| [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
 <!---LeetCode Topics End-->
