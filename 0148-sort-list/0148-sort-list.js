@@ -69,10 +69,10 @@ var sortList = function (head) {
 
 /*
 Explanation:
-1. **Divide and Conquer Approach (Merge Sort)**:
+1. Divide and Conquer Approach (Merge Sort):
    - The list is recursively split into two halves until each sublist has one or no elements.
    - The middle of the list is found using the two-pointer technique.
-2. **Merge Two Sorted Lists**:
+2. Merge Two Sorted Lists:
    - Two sorted sublists are merged into a single sorted list.
    - This ensures the sorted order is maintained as the lists are combined.
 3. The recursion continues until the entire list is merged into a single sorted list.
