@@ -117,6 +117,7 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0039-combination-sum](https://github.com/davesheinbein/LeetCode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
+| [0052-n-queens-ii](https://github.com/davesheinbein/LeetCode/tree/master/0052-n-queens-ii) |
 | [0077-combinations](https://github.com/davesheinbein/LeetCode/tree/master/0077-combinations) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 ## Matrix
