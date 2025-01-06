@@ -135,4 +135,24 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
+## Linked List
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+## Sorting
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
+## Merge Sort
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
 <!---LeetCode Topics End-->
