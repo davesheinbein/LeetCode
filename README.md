@@ -55,6 +55,7 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 | [0433-minimum-genetic-mutation](https://github.com/davesheinbein/LeetCode/tree/master/0433-minimum-genetic-mutation) |
@@ -63,6 +64,7 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/davesheinbein/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## Breadth-First Search
 |  |
@@ -101,10 +103,12 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 ## Trie
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 ## Backtracking
 |  |
