@@ -52,6 +52,7 @@ Each category contains subdirectories with specific problems, their respective s
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
 | [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
+| [0162-find-peak-element](https://github.com/davesheinbein/LeetCode/tree/master/0162-find-peak-element) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
@@ -186,4 +187,5 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0162-find-peak-element](https://github.com/davesheinbein/LeetCode/tree/master/0162-find-peak-element) |
 <!---LeetCode Topics End-->
