@@ -55,6 +55,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## String
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
 | [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/davesheinbein/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -115,6 +116,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/davesheinbein/LeetCode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
 | [0052-n-queens-ii](https://github.com/davesheinbein/LeetCode/tree/master/0052-n-queens-ii) |
@@ -124,4 +126,8 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
