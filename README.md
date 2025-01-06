@@ -52,6 +52,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## String
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 | [0433-minimum-genetic-mutation](https://github.com/davesheinbein/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 ## Depth-First Search
@@ -63,6 +64,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Breadth-First Search
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0207-course-schedule](https://github.com/davesheinbein/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/davesheinbein/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
@@ -89,5 +91,6 @@ Each category contains subdirectories with specific problems, their respective s
 ## Hash Table
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0433-minimum-genetic-mutation](https://github.com/davesheinbein/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 <!---LeetCode Topics End-->
