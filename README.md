@@ -50,6 +50,7 @@ Each category contains subdirectories with specific problems, their respective s
 | ------- |
 | [0039-combination-sum](https://github.com/davesheinbein/LeetCode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
+| [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
@@ -131,6 +132,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Matrix
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
@@ -180,4 +182,8 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
+## Binary Search
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
 <!---LeetCode Topics End-->
