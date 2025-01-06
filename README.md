@@ -140,6 +140,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Linked List
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
 ## Two Pointers
 |  |
@@ -148,6 +149,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Divide and Conquer
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
 ## Sorting
@@ -157,9 +159,14 @@ Each category contains subdirectories with specific problems, their respective s
 ## Merge Sort
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
 ## Tree
 |  |
 | ------- |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
