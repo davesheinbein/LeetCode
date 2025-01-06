@@ -54,6 +54,7 @@ Each category contains subdirectories with specific problems, their respective s
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
+| [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
 ## String
 |  |
 | ------- |
@@ -137,6 +138,7 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/davesheinbein/LeetCode/tree/master/0022-generate-parentheses) |
+| [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
 ## Linked List
 |  |
 | ------- |
@@ -152,6 +154,7 @@ Each category contains subdirectories with specific problems, their respective s
 | [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/davesheinbein/LeetCode/tree/master/0148-sort-list) |
 | [0772-construct-quad-tree](https://github.com/davesheinbein/LeetCode/tree/master/0772-construct-quad-tree) |
+| [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
 ## Sorting
 |  |
 | ------- |
@@ -169,4 +172,12 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/davesheinbein/LeetCode/tree/master/0023-merge-k-sorted-lists) |
+## Queue
+|  |
+| ------- |
+| [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0954-maximum-sum-circular-subarray](https://github.com/davesheinbein/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
 <!---LeetCode Topics End-->
