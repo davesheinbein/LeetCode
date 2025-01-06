@@ -3,7 +3,6 @@
  * @param {number} target - The target sum
  * @return {number[][]} - A list of all unique combinations where the chosen numbers sum to target
  */
- 
 var combinationSum = function(candidates, target) {
     const result = []; // This will store the list of all unique combinations
 
