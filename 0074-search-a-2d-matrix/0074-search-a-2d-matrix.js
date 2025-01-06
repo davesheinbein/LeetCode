@@ -3,6 +3,7 @@
  * @param {number} target
  * @return {boolean}
  */
+ 
 var searchMatrix = function(matrix, target) {
     // Edge case: If matrix is empty, return false
     if (matrix.length === 0 || matrix[0].length === 0) return false;
