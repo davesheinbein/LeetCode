@@ -113,6 +113,7 @@ Each category contains subdirectories with specific problems, their respective s
 ## Backtracking
 |  |
 | ------- |
+| [0077-combinations](https://github.com/davesheinbein/LeetCode/tree/master/0077-combinations) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 ## Matrix
 |  |
