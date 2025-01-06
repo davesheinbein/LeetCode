@@ -48,12 +48,14 @@ Each category contains subdirectories with specific problems, their respective s
 ## Array
 |  |
 | ------- |
+| [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 ## String
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/davesheinbein/LeetCode/tree/master/0127-word-ladder) |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
 | [0433-minimum-genetic-mutation](https://github.com/davesheinbein/LeetCode/tree/master/0433-minimum-genetic-mutation) |
 ## Depth-First Search
@@ -103,4 +105,13 @@ Each category contains subdirectories with specific problems, their respective s
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/davesheinbein/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
+## Backtracking
+|  |
+| ------- |
+| [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
+## Matrix
+|  |
+| ------- |
+| [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 <!---LeetCode Topics End-->
