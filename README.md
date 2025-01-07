@@ -54,6 +54,7 @@ Each category contains subdirectories with specific problems, their respective s
 | [0046-permutations](https://github.com/davesheinbein/LeetCode/tree/master/0046-permutations) |
 | [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/davesheinbein/LeetCode/tree/master/0079-word-search) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/davesheinbein/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/davesheinbein/LeetCode/tree/master/0162-find-peak-element) |
 | [0212-word-search-ii](https://github.com/davesheinbein/LeetCode/tree/master/0212-word-search-ii) |
 | [0399-evaluate-division](https://github.com/davesheinbein/LeetCode/tree/master/0399-evaluate-division) |
@@ -191,5 +192,6 @@ Each category contains subdirectories with specific problems, their respective s
 | [0033-search-in-rotated-sorted-array](https://github.com/davesheinbein/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/davesheinbein/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0074-search-a-2d-matrix](https://github.com/davesheinbein/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/davesheinbein/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/davesheinbein/LeetCode/tree/master/0162-find-peak-element) |
 <!---LeetCode Topics End-->
